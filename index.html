@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitin Kumar | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+    body { line-height: 1.6; background: #fff; color: #333; }
+
+    /* Navbar */
+    nav {
+      background: #222; color: #fff; padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    nav h2 { font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav ul li a { color: #fff; text-decoration: none; transition: 0.3s; font-weight: 500; }
+    nav ul li a:hover { color: #f39c12; }
+
+    /* Hero Section */
+    header {
+      text-align: center; padding: 60px 20px; background: #f8f9fa;
+    }
+    header img {
+      width: 160px; height: 160px; border-radius: 50%;
+      object-fit: cover; border: 4px solid #f39c12;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    header h1 { margin: 20px 0 8px; font-size: 28px; font-weight: 700; }
+    header h3 { font-weight: 400; color: #555; font-size: 18px; }
+    .cv-btn {
+      display: inline-block; margin-top: 20px; padding: 12px 22px;
+      background: #f39c12; color: #fff; text-decoration: none;
+      border-radius: 8px; font-weight: 600; font-size: 15px;
+      transition: background 0.3s ease;
+    }
+    .cv-btn:hover { background: #d35400; }
+
+    /* Section Styling */
+    section {
+      max-width: 950px; margin: 50px auto; padding: 30px;
+      background: #fff; border-radius: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      margin-bottom: 18px; color: #f39c12; font-size: 22px;
+      border-bottom: 2px solid #eee; padding-bottom: 8px;
+    }
+
+    /* Skills */
+    .skill { margin: 15px 0; font-weight: 500; }
+    .bar { background: #eee; border-radius: 6px; overflow: hidden; height: 14px; }
+    .bar div { height: 14px; text-align: right; font-size: 12px; padding-right: 6px; color: #fff; line-height: 14px; }
+
+    /* Projects */
+    .project {
+      margin-bottom: 18px; padding: 16px;
+      border: 1px solid #eee; border-radius: 8px; background: #fafafa;
+      transition: transform 0.2s;
+    }
+    .project:hover { transform: translateY(-3px); }
+    .project h4 { margin-bottom: 6px; color: #333; font-size: 18px; }
+
+    /* Contact */
+    .contact-info a { color: #333; text-decoration: none; }
+    .contact-info i { color: #f39c12; margin-right: 10px; }
+
+    /* Footer */
+    footer { text-align: center; margin-top: 40px; padding: 20px; background: #222; color: #ccc; }
+    footer a { color: #f39c12; margin: 0 10px; text-decoration: none; font-size: 18px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Nitin Kumar</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <img src="nitin.jpg" alt="Nitin Kumar">
+    <h1>Nitin Kumar</h1>
+    <h3>Aspiring Web Developer | Front-End</h3>
+    <a href="Nitin-Kumar-CV.pdf" class="cv-btn" download>
+      <i class="fa-solid fa-download"></i> Download CV
+    </a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a <b>Computer Science & Engineering</b> student passionate about <b>web development</b> and building user-friendly applications.</p>
+    <ul>
+      <li><i class="fa-solid fa-code"></i> Strong foundation in <b>HTML, CSS, JavaScript</b>, and <b>Java</b></li>
+      <li><i class="fa-solid fa-lightbulb"></i> Quick learner with an interest in <b>front-end technologies</b></li>
+      <li><i class="fa-solid fa-people-group"></i> Team player with good <b>communication & problem-solving skills</b></li>
+      <li><i class="fa-solid fa-graduation-cap"></i> Focused on continuous learning and professional growth</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <table style="width:100%; border-collapse:collapse;">
+      <thead>
+        <tr style="background:#f4f4f4;">
+          <th style="padding:12px; text-align:left;">Year</th>
+          <th style="padding:12px; text-align:left;">Degree</th>
+          <th style="padding:12px; text-align:left;">Institute</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:12px;">2024 - 2028</td>
+          <td style="padding:12px;">B.Tech in CSE</td>
+          <td style="padding:12px;">GLA University Mathura</td>
+        </tr>
+        <tr>
+          <td style="padding:12px;">2023 - 2024</td>
+          <td style="padding:12px;">Senior Secondary (12th)</td>
+          <td style="padding:12px;">SVM Kamla Nagar Agra</td>
+        </tr>
+        <tr>
+          <td style="padding:12px;">2021 - 2022</td>
+          <td style="padding:12px;">Secondary (10th)</td>
+          <td style="padding:12px;">SVM Kamla Nagar Agra</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">HTML
+      <div class="bar"><div style="width:85%; background:#e34c26;">85%</div></div>
+    </div>
+    <div class="skill">CSS
+      <div class="bar"><div style="width:75%; background:#1572b6;">75%</div></div>
+    </div>
+    <div class="skill">Java
+      <div class="bar"><div style="width:70%; background:#f89820;">70%</div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h4>Amazon Clone</h4>
+      <p>Developed a responsive Amazon clone using HTML and CSS, replicating product grid and navigation.</p>
+    </div>
+    <div class="project">
+      <h4>Weather App</h4>
+      <p>Built a weather forecast app with JavaScript and OpenWeather API integration.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:nitin2911.in@gmail.com">nitin2911.in@gmail.com</a></p>
+      <p><i class="fa-solid fa-phone"></i> <a href="tel:+919259430033">+91 92594 30033</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/nitin-kumar-2223b6326" target="_blank">LinkedIn</a></p>
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/nitinkumar2911" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nitin Kumar | 
+      <a href="https://github.com/nitinkumar2911" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nitin-kumar-2223b6326" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </p>
+  </footer>
+
+</body>
+</html>
